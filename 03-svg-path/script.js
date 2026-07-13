@@ -1,11 +1,11 @@
-let initialPath = "M 10 100 Q 250 100 950 100"
+let initialPath = "M 10 250 Q 250 250 1890 250"
 
-let finalPath = "M 10 100 Q 250 100 950 100"
+let finalPath = "M 10 250 Q 250 250 1890 250"
 
 let string = document.querySelector("#string")
 
 string.addEventListener("mousemove", function (dets) {
-    initialPath = `M 10 100 Q ${dets.x} ${dets.y} 950 100`
+    initialPath = `M 10 250 Q ${dets.x} ${dets.y} 1890 250`
 
     gsap.to("svg path",{
         attr:{ d: initialPath },
